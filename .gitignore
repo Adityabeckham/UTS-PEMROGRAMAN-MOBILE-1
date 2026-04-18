@@ -1,0 +1,42 @@
+# Gradle files
+.gradle/
+build/
+/*/build/
+
+# IDE files
+.idea/
+*.iml
+*.iws
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/navEditor.xml
+
+# Local configuration
+local.properties
+
+# Log files
+*.log
+
+# Android Studio captures folder
+/captures
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# JKS (Signing keys)
+*.jks
+*.keystore
+
+# Generated secrets
+secrets.xml
