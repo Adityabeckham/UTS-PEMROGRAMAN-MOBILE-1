@@ -1,6 +1,5 @@
 package com.example.uts_pemrogramanmobile1.screens
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -11,10 +10,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -28,7 +24,7 @@ fun HomeScreen(username: String, onNavigateToForm: () -> Unit) {
             containerColor = Color.Transparent,
             topBar = {
                 CenterAlignedTopAppBar(
-                    title = { Text("DASHBOARD", fontWeight = FontWeight.Black, letterSpacing = 2.sp) },
+                    title = { Text("Seminar Registration App", fontWeight = FontWeight.Black, fontSize = 18.sp) },
                     actions = {
                         IconButton(onClick = { }) {
                             Icon(Icons.Default.Notifications, contentDescription = null, tint = Color(0xFF0D47A1))
@@ -148,7 +144,7 @@ fun HomeScreen(username: String, onNavigateToForm: () -> Unit) {
                             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF1976D2)),
                             elevation = ButtonDefaults.buttonElevation(defaultElevation = 4.dp)
                         ) {
-                            Text("DAFTAR SEKARANG", fontSize = 16.sp, fontWeight = FontWeight.Black)
+                            Text("DAFTAR SEMINAR", fontSize = 16.sp, fontWeight = FontWeight.Black)
                         }
                     }
                 }

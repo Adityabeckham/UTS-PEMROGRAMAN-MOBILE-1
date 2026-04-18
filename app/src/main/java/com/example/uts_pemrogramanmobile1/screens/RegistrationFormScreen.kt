@@ -1,8 +1,5 @@
 package com.example.uts_pemrogramanmobile1.screens
 
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.fadeIn
-import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -56,7 +53,7 @@ fun RegistrationFormScreen(onSubmit: (RegistrationData) -> Unit, onBack: () -> U
         if (email.isEmpty()) "Email wajib diisi" 
         else if (!email.contains("@")) "Email harus mengandung '@'" else null
     } else null
-    
+
     val phoneError = if (hasAttemptedSubmit) {
         if (phone.isEmpty()) "Nomor HP wajib diisi"
         else if (!phone.all { it.isDigit() }) "Hanya boleh angka"
@@ -90,13 +87,17 @@ fun RegistrationFormScreen(onSubmit: (RegistrationData) -> Unit, onBack: () -> U
                 )
             }
         ) { innerPadding ->
-            BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
-                val isWideScreen = maxWidth > 600.dp
+            BoxWithConstraints(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(innerPadding)
+            ) {
+                // Explicitly use the scope to avoid "BoxWithConstraints scope is not used" error
+                val isWideScreen = this.maxWidth > 600.dp
                 
                 Column(
                     modifier = Modifier
                         .fillMaxSize()
-                        .padding(innerPadding)
                         .verticalScroll(rememberScrollState()),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
