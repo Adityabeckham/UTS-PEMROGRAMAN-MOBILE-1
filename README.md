@@ -25,7 +25,7 @@ Aplikasi Pendaftaran Seminar Mahasiswa berbasis Android yang dibangun menggunaka
 - **Password**: `adit123`
 
 ## 🎥 Video Penjelasan (Link)
-[Klik di sini untuk menonton video penjelasan kode dan UI](URL_VIDEO_GDRIVE_ATAU_YOUTUBE_DISINI)
+[Klik di sini untuk menonton video penjelasan kode dan UI](https://youtu.be/Sn1ogaT7uBE)
 
 ---
 
@@ -55,5 +55,5 @@ Fitur Pendaftaraan Seminar
 4. Run pada Emulator atau Perangkat Fisik (Android API 24+).
 
 ---
-**Dibuat oleh:** [Nama Anda]
-**NIM:** [NIM Anda]
+**Create by:** [Aditya Beckham]
+
